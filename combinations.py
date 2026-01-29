@@ -1,7 +1,4 @@
-def fact(n):
-    if n == 0 or n == 1:
-        return 1
-    return n * fact(n - 1)
+import math
 
 def comb(n, k):
-    return fact(n) // (fact(k) * fact(n - k))
+    return math.comb(n, k)
