@@ -1,7 +1,8 @@
-def factorial(num):    
-    if num == 0 or num == 1:
-        return 1
-    return num * factorial(num - 1)
+def fact(n):
+    result = 1
+    for i in range(1, n + 1):
+        result *= i
+    return result
+
 def comb(n, k):
-    return factorial(n) // (factorial(k) * factorial(n - k))
- 
+    return fact(n) // (fact(k) * fact(n - k))
